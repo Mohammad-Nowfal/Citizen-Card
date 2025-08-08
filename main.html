@@ -1,0 +1,202 @@
+<html>
+    <head>
+        <title>HOME</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <ul>
+                    <li><a href="admin_home.html">Home</a></li>
+                    <li><a href="delete.html">delete users</a></li>
+                    <li><a href="view.html">View documents</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <form action="landing.html">
+                <h1>WELCOME</h1>
+                <h2>YOU ARE LOGGED IN</h2>
+                <div>
+                    <button type="submit">LOGOUT<span></span></button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
+<html>
+    <head>
+        <title>DELETE</title>
+        <link rel="stylesheet" href="delete.css">
+    </head>    
+    <body>
+        <div class="delete">
+            <div class="page">
+                <h2>Delete User</h2>    
+                <form action="delete.php" method="POST">
+                    <input type="text" name="id" placeholder="user_id" required=""><br>
+                    <input type="submit" name="submit" value="delete" id="button">
+                </form>
+            </div>
+        </div>    
+    </body>  
+</html>
+<html>
+    <head>
+        <title>HOME</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <ul>
+                    <li><a href="landing.html">Home</a></li>
+                    <li><a href="update.html">Update Profile</a></li>
+                    <li><a href="upload details.html">Upload Details</a></li>
+                    <li><a href="admin login.html">View Status</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <form action="landing.html">
+                <h1>WELCOME</h1>
+                <h2>YOU ARE LOGGED IN</h2>
+                <div>
+                    <button type="submit">LOGOUT<span></span></button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
+<html>
+    <head>
+        <title>LANDING</title>
+        <link rel="stylesheet" href="landing.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="login.html">User Login</a></li>
+                        <li><a href="login_admin.html">Admin Login</a></li>
+                    </ul>
+                 </nav>
+            </div>
+            <div class="content">
+                <h1>CITIZEN CARD APPROVAL</h1>
+                <p>The Citizen Card System is a web application for
+                     applying citizen card online. The users can apply for 
+                     the <br> at any they needed. For applying the card the user 
+                     need to register and upload the necessary documents needed.
+                </p>
+            </div>
+        </div>
+     </body>
+</html>
+<html>
+    <head>
+        <title>LOGIN</title>
+        <link rel="stylesheet" href="login_admin.css">      
+    </head>
+    <body>
+        <div class="login">
+            <img src="login.png" height="100" width="100">
+            <div class="page">
+                <form action="login_admin.php" method="POST">
+                    <h2>ADMIN LOGIN</h2>
+                    <input type="text" placeholder="username" name="username" required=""><br>
+                    <input type="password" placeholder="password" name="password" required=""><br>
+                    <input type="submit" value="Sign In" id="button">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<html>
+    <head>
+        <title>LOGIN</title>
+        <link rel="stylesheet" href="login.css">      
+    </head>
+    <body>
+        <div class="login">
+            <img src="login.png" height="100" width="100">
+            <div class="page">
+                <form action="login.php" method="POST">
+                    <h1>USER LOGIN</h1>
+                    <input type="text" name="username" placeholder="username" required=""><br>
+                    <input type="password" name="password" placeholder="password" required=""><br>
+                    <a href="register.html">Sign Up?</a><br>
+                    <input type="submit" value="Sign In" id="button" >
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="register.css">
+    </head>
+    <body>
+        <div class="SignUp">
+            <h1>SignUp</h1>
+            <form action="register.php" method="POST">
+                <p>Username</p>
+                <input type="text" name="username" placeholder="username" required="">
+                <p>Password</p>
+                <input type="password" name="password" placeholder="password" required="">
+                <p>Confirm Password</p>
+                <input type="password" name="confirm_password" placeholder="confirm password" required="">
+                <p>Email</p>
+                <input type="email" name="email" placeholder="email"required="" >
+                <button type="submit">Sign up</button>
+            </form>
+        </div>
+    </body>
+</html>
+<html>
+    <head>
+        <title>Update_Profile</title>
+        <link rel="stylesheet" href="update.css">
+    </head>
+    <body>
+        <div class="Update_Profile">
+            <h1>Update Profile</h1>
+            <form action="update.php" method="POST">
+                <p>Username</p>
+                <input type="text" name="username" placeholder="username" required="">
+                <p>Password</p>
+                <input type="password" name="password" placeholder="password" required="">
+                <p>Confirm Password</p>
+                <input type="password" name="confirm_password" placeholder="confirm password" required="">
+                <p>Email</p>
+                <input type="email" name="email" placeholder="email"required="" >
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    </body>
+</html>
+<html>
+    <head>
+        <title>Upload_Details</title>
+        <link rel="stylesheet" href="update.css">
+    </head>
+    <body>
+        <div class="Update_Details">
+            <h1>SignUp</h1>
+            <form action="upload.php" method="POST">
+                <p>First Name</p>
+                <input type="text" name="firstname" placeholder="firstname" required="">
+                <p>Last Name</p>
+                <input type="text" name="lastname" placeholder="lastname" required="">
+                <p>Address</p>
+                <input type="text" name="address" placeholder="address" required="">
+                <p>Marital Status</p>
+                <input type="email" name="email" placeholder="email"required="" >
+                <button type="submit">upload</button>
+            </form>
+        </div>
+    </body>
+</html>

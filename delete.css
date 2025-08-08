@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(home.gif);
+    background-size: cover;
+    background-position: center;
+}
+.page{
+    top:50%;
+    left:50%;
+    position:absolute;
+    padding:60px 4px 50px 40px;
+    background:  rgb(175, 68, 86);
+    transform:translate(-50%,-50%);
+}
+input[type="text"]{
+    color:white;
+    width:200px;
+    border:none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    padding: 6px;
+    margin-bottom:20px;
+    margin-left: -20px;
+}
+#button{
+    border-radius:60px;
+    padding: 10px 20px;
+    background: dodgerblue;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    margin-left: 30px;
+}
+#button:hover{
+    background-color: greenyellow;
+    color: black;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    color: white;
+    margin-left: -50px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    position: relative;
+}
+

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>HOME</title>
+       <link rel="stylesheet" href="home.css">
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                <ul>
+                    <li><a href="landing.html">Home</a></li>
+                    <li><a href="update.html">Update Profile</a></li>
+                    <li><a href="upload_detail.php">Upload Details</a></li>
+                    <li><a href="view_upload_user.php">View Status</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <form action="landing.html">
+                <h1>WELCOME</h1>
+                <h2>YOU ARE LOGGED IN</h2>
+                <div>
+                    <button type="submit">LOGOUT<span></span></button>
+                </div>
+            </form>
+            
+            </div>
+        </div>
+        <form>
+            <?php session_start(); $user_id=$_SESSION['user_id']; echo $user_id;?>
+<input type="hidden" name="user_id" value="<?php echo $user_id; ?>" readonly >
+
+            </form>
+    </body>
+</html>

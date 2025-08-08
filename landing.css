@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(landing.jpg);
+    background-size: cover;
+    background-position: center;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-content: left;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 2%;
+    justify-content: space-between;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    margin-left: 40px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: -100px;
+    position: relative;
+}
+nav ul a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 25px;
+    text-transform: uppercase;
+    bottom: 100px;
+}
+nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+nav ul a:hover{
+    background-color:wheat ;
+    color: black;
+    cursor: pointer;
+}
+.content{
+     width: 100%;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     text-align: center;
+     color: #fff;
+}
+.content h1{
+    font-size: 70px;
+    margin-bottom: 280px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 20px;
+}

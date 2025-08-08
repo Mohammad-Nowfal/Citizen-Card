@@ -1,0 +1,68 @@
+body{
+    margin:0;
+    padding:0;
+    background-image: url(beach.jfif);
+    background-size: cover;
+}
+.login{
+    top:50%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%,-50%);
+}
+.page{
+    padding:60px 40px 50px 40px;
+    background: rgba(50,50,50);
+    border-radius:30px;
+} 
+input[type="text"]{
+    color:white;
+    width:200px;
+    border:none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    padding:6px;
+    margin-bottom:20px;
+}   
+input[type="password"]{
+    color:white;
+    width:200px;
+    border:none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    padding:6px;
+    margin-bottom:20px;
+}       
+#button{
+    border-radius:60px;
+    padding: 10px 20px;
+    background: dodgerblue;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    margin-left: 60px;
+}
+#button:hover{
+    background-color: greenyellow;
+    color: black;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    color: white;
+    margin-left: -1px;
+}
+a:hover{  
+    color: red;
+    cursor: pointer;
+    font-size: 18px;
+}
+a{
+    font-size: 13px;
+}
+img{
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 100px;
+}
